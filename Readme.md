@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Пайметов](https://up.htmlacademy.ru/adaptive/20/user/1272521).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Новиков](https://htmlacademy.ru/profile/id42641).
 
 ---
 
