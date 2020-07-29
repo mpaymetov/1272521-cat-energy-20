@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="191" height="38" alt="Кэт энерджи">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visualli-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <main class="page-main">
+    <h1 class="visualli-hidden">Cat Energy - Главная</h1>
 
-  </body>
+    <section class="promo">
+      <h2 class="promo__title">Функциональное питание для котов</h2>
+      <p class="promo__slogan">Занялся собой? Займись котом!</p>
+      <img src="https://via.placeholder.com/150x150" class="promo__picture" alt="Cat Energy PRO">
+      <a class="promo__link" href="form.html">подобрать программу</a>
+    </section>
+
+    <section class="program">
+      <h2 class="visualli-hidden">Программы питания</h2>
+      <ul class="program__list">
+        <li class="program__item">
+          <h3 class="program__item-title">похудение</h3>
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program__link" href="catalog.html">каталог slim</a>
+        </li>
+        <li class="program__item">
+          <h3 class="program__item-title">Набор массы</h3>
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program__link" href="catalog.html">каталог pro</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="advantage">
+      <h2 class="advantage__title">Как это работает</h2>
+      <ul class="advantage__list">
+        <li class="advantage__item advantage__icon advantage__icon--foliage">
+          <p class="advantage__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="advantage__item advantage__icon advantage__icon--water">
+          <p class="advantage__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="advantage__item advantage__icon advantage__icon--cutlery">
+          <p class="advantage__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="advantage__item advantage__icon advantage__icon--clock">
+          <p class="advantage__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Кэт энерджи">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visualli-hidden">ВКонтакте</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visualli-hidden">instagram</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visualli-hidden">facebook</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
