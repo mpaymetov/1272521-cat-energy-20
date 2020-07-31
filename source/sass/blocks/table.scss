@@ -1,0 +1,16 @@
+.table {}
+
+.table__row {}
+
+.table__cell {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+
+  &:last-child {
+    text-align: right;
+  }
+}
