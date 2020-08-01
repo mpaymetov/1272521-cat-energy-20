@@ -1,0 +1,33 @@
+.page-header {}
+
+.page-header__wrapper {
+  display: flex;
+  padding: 12px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.page-header__logo {
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__toggle {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-image: url("../img/icon-close.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
