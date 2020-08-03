@@ -6,7 +6,6 @@
 
 .product__item {
   border-bottom: 1px solid #EBEBEB;
-  //padding-top: 3px;
   padding-bottom: 25px;
 
   &:first-child {
@@ -48,21 +47,6 @@
 }
 
 .product__button {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 0px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #68B738;
 
-  width: 100%;
-  min-height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  //margin-bottom: 25px;
 }
 

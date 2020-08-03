@@ -1,0 +1,35 @@
+.button {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  border: none;
+
+  &--choose-program {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #68B738;
+  }
+
+  &--order {
+    background-color: #68B738;
+    color: #FFFFFF;
+  }
+
+  &--show-all {
+    background-color: #F2F2F2;
+    color: #444444;
+  }
+}
+

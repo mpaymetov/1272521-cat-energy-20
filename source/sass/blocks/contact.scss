@@ -1,1 +1,49 @@
-.contact {}
+.contact {
+  padding-top: 28px;
+  //padding-bottom: 22px;
+  background-color: #F2F2F2;
+
+  &--main {
+    background-color: #FFFFFF;
+  }
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: row;
+  //justify-content: space-between;
+
+  //margin-top: 28px;
+  margin-bottom: 22px;
+}
+
+.contact__slogan {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #111111;
+
+  //width: 50%;
+  flex-basis: 50%;
+  margin: 0;
+}
+
+.contact__address {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  flex-basis: 50%;
+  margin: 0;
+}
+
+.contact__map {
+  max-height: 400px;
+}
