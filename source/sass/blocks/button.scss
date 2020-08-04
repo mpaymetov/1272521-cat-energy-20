@@ -15,21 +15,31 @@
 
   border: none;
 
+  background-color: #68B738;
+  color: #FFFFFF;
+
+  &:hover,
+  &:focus {
+    background-color: #5EAA2F;
+  }
+
+  &:active .button--text {
+    opacity: 0.3;
+  }
+
   &--choose-program {
     font-size: 14px;
     line-height: 18px;
-    color: #FFFFFF;
-    background-color: #68B738;
-  }
-
-  &--order {
-    background-color: #68B738;
-    color: #FFFFFF;
   }
 
   &--show-all {
     background-color: #F2F2F2;
     color: #444444;
+
+    &:hover,
+    &:focus {
+      background-color: #EBEBEB;
+    }
   }
 }
 
