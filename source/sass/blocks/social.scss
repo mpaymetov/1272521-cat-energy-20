@@ -1,5 +1,3 @@
-.social {}
-
 .social__list {
   list-style: none;
   padding: 0;
@@ -24,14 +22,16 @@
   display: block;
   cursor: pointer;
 
-  path, circle {
+  path,
+  circle {
     fill: #666666;
   }
 
   &:hover,
   &:focus {
-    path, circle {
-      fill: #68B738;
+    path,
+    circle {
+      fill: #68b738;
     }
   }
 

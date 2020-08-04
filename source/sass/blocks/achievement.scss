@@ -17,7 +17,7 @@
 }
 
 .achievement__description {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -33,11 +33,11 @@
 
   bottom: -14px;
   left: calc(50% - 44px);
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .achievement__value {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -47,7 +47,7 @@
   color: #000000;
 
   margin: 0;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 3px;
   padding-top: 14px;

@@ -1,10 +1,10 @@
 .live-example {
-  background: #EAEAEA;
+  background: #eaeaea;
   padding-top: 27px;
 }
 
 .live-example__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -16,7 +16,7 @@
 }
 
 .live-example__description {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -35,7 +35,7 @@
 }
 
 .live-example__cost {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -46,8 +46,4 @@
   color: #000000;
   margin-top: 0;
   margin-bottom: 36px;
-}
-
-.live-example__slider {
-
 }

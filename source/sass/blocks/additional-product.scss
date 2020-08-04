@@ -3,7 +3,7 @@
 }
 
 .additional-product__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -23,7 +23,7 @@
     top: 16px;
     width: calc(100% - 263px);
     height: 0;
-    border: 1px solid #68B738;
+    border: 1px solid #68b738;
   }
 }
 
@@ -36,18 +36,18 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #68B738;
+  background-color: #68b738;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   min-height: 289px;
 }
 
 .additional-product__text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   text-align: center;
 }

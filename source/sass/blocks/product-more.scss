@@ -4,17 +4,17 @@
 }
 
 .product-more__item {
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: 1px solid #cdcdcd;
   padding-top: 13px;
   padding-bottom: 19px;
 
   &:first-child {
-    border-top: 1px solid #CDCDCD;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
 .product-more__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -37,7 +37,7 @@
 }
 
 .product-more__option {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -48,7 +48,7 @@
 }
 
 .product-more__value {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -57,5 +57,3 @@
   color: #444444;
   margin: 0;
 }
-
-.product-more__button {}
