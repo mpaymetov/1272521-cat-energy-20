@@ -1,3 +1,49 @@
 .live-example {
-  background: #EAEAEA;
+  background: #eaeaea;
+  padding-top: 27px;
+}
+
+.live-example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.live-example__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* special_dark-grey */
+
+  color: #444444;
+
+  padding-right: 1px;
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+
+.live-example__achievement {
+  margin-bottom: 34px;
+}
+
+.live-example__cost {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 36px;
 }

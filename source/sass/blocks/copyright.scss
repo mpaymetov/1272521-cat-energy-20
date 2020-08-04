@@ -6,21 +6,23 @@
 }
 
 .copyright__link {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 
-  path, circle {
+  path,
+  circle {
     fill: #666666;
   }
 
   &:hover,
   &:focus {
-    path, circle {
-      fill: #68B738;
+    path,
+    circle {
+      fill: #68b738;
     }
   }
 
@@ -28,4 +30,3 @@
     opacity: 0.3;
   }
 }
-

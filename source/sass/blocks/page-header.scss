@@ -1,16 +1,15 @@
-.page-header {}
-
 .page-header__wrapper {
   display: flex;
   padding: 12px 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 

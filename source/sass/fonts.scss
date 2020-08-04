@@ -1,9 +1,9 @@
 /* oswald-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/oswaldregular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/oswaldregular.woff') format('woff'); /* Modern Browsers */
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/oswaldregular.woff") format("woff"); /* Modern Browsers */
   font-display: swap;
 }
