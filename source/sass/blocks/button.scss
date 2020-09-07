@@ -15,26 +15,36 @@
 
   border: none;
 
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $main-green;
+  color: $white;
+
+  @media (min-width: $tablet) {
+    width: 244px;
+    min-height: 54px;
+
+  }
 
   &:hover,
   &:focus {
     background-color: #5eaa2f;
   }
 
-  &:active .button--text {
+  &:active .button__text {
     opacity: 0.3;
   }
 
   &--choose-program {
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
   }
 
   &--show-all {
     background-color: #f2f2f2;
-    color: #444444;
+    color: $dark-grey;
 
     &:hover,
     &:focus {

@@ -1,5 +1,5 @@
 .live-example {
-  background: #eaeaea;
+  background-color: #eaeaea;
   padding-top: 27px;
 }
 
@@ -10,9 +10,14 @@
   font-size: 36px;
   line-height: 40px;
 
-  color: #000000;
+  color: $black;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .live-example__description {
@@ -23,15 +28,24 @@
   line-height: 18px;
   /* special_dark-grey */
 
-  color: #444444;
+  color: $dark-grey;
 
   padding-right: 1px;
   margin-top: 33px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .live-example__achievement {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .live-example__cost {
@@ -43,7 +57,20 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #000000;
+  color: $black;
   margin-top: 0;
   margin-bottom: 36px;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

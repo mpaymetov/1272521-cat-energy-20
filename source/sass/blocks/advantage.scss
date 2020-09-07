@@ -8,7 +8,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
   margin-top: 27px;
   margin-bottom: 38px;
 }
@@ -17,10 +17,24 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .advantage__item {
   padding-left: 80px;
+
+  @media (min-width: $tablet) {
+    width: 230px;
+    padding-left: 0;
+    padding-top: 151px;
+    //flex-flow: 0;
+  }
 }
 
 .advantage__icon {
@@ -34,8 +48,15 @@
     height: 60px;
     top: -3px;
     left: 0;
-    background-color: #68b738;
+    background-color: $main-green;
     background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 
   &--foliage {
@@ -71,4 +92,10 @@
   line-height: 18px;
   margin-top: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+  }
 }

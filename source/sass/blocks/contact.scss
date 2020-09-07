@@ -4,7 +4,7 @@
   background-color: #f2f2f2;
 
   &--main {
-    background-color: #ffffff;
+    background-color: $white;
   }
 }
 
@@ -34,7 +34,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $dark-grey;
 
   flex-basis: 50%;
   margin: 0;

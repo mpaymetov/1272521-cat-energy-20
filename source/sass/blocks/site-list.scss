@@ -2,10 +2,25 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-top: 42px;
+  }
 }
 
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    margin-right: 33px;
+    border-bottom: none;
+  }
 }
 
 .site-list__link {
@@ -15,10 +30,18 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   text-align: center;
   display: block;
   padding-top: 22px;
   padding-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

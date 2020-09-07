@@ -5,6 +5,10 @@
   background-position-x: center;
   padding-top: 27px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    background-image: none;
+  }
 }
 
 .promo__title {
@@ -15,10 +19,20 @@
   line-height: 36px;
   text-align: center;
 
-  color: #ffffff;
+  color: $white;
 
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: start;
+    padding-left: 87px;
+    padding-right: 200px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__slogan {
@@ -29,7 +43,24 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   margin-top: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: start;
+    padding-left: 87px;
+    margin-bottom: 20px;
+  }
+}
+
+.promo__link {
+  @media (min-width: $tablet) {
+    position: absolute;
+    left: 87px;
+    top: 230px;
+  }
 }

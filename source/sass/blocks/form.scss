@@ -15,7 +15,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
   padding-left: 20px;
   padding-right: 24px;
   margin-bottom: 34px;
@@ -49,7 +49,7 @@
   white-space: nowrap;
 
   /* special_dark-grey */
-  color: #444444;
+  color: $dark-grey;
 
   position: relative;
 
@@ -74,7 +74,7 @@
   }
 
   &--checkbox {
-    color: #000000;
+    color: $black;
     margin-right: 0;
     padding-left: 46px;
     margin-bottom: 24px;
@@ -116,7 +116,7 @@
     text-transform: uppercase;
 
     /* special_dark-grey */
-    color: #444444;
+    color: $dark-grey;
   }
 
   &::-webkit-outer-spin-button,
@@ -134,7 +134,7 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #000000;
+  color: $black;
   margin-top: 21px;
   margin-bottom: 32px;
 }
@@ -157,7 +157,7 @@
     line-height: 18px;
     text-transform: uppercase;
     /* special_dark-grey */
-    color: #444444;
+    color: $dark-grey;
   }
 }
 
@@ -168,7 +168,7 @@
       display: block;
       width: 13.5px;
       height: 13.5px;
-      background-color: #68b738;
+      background-color: $main-green;
       border-radius: 50%;
       position: absolute;
       left: 8px;
