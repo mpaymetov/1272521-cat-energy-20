@@ -18,8 +18,28 @@
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
-    margin-right: 33px;
     border-bottom: none;
+  }
+
+  &--active {
+    @media (min-width: $tablet) {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $main-green;
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet) {
+      border-top: none;
+    }
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-right: 33px;
+    }
   }
 }
 

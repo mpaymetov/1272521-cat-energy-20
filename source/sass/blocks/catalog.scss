@@ -8,4 +8,9 @@
 
   margin-top: 27px;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

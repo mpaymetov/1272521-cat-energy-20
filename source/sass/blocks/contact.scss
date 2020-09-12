@@ -1,17 +1,36 @@
 .contact {
   padding-top: 28px;
   //padding-bottom: 22px;
-  background-color: #f2f2f2;
+  background-color: $grey;
+  position: relative;
 
   &--main {
     background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
   }
 }
 
 .contact__wrapper {
   display: flex;
   flex-direction: row;
+
+  justify-content: space-between;
   margin-bottom: 22px;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    background-color: $white;
+    width: 570px;
+    height: 201px;
+
+    padding-left: 76px;
+    padding-right: 89px;
+    padding-top: 65px;
+    top: 95px;
+  }
 }
 
 .contact__slogan {
@@ -24,8 +43,9 @@
 
   color: #111111;
 
-  flex-basis: 50%;
+  //flex-basis: 50%;
   margin: 0;
+  display: block;
 }
 
 .contact__address {
@@ -36,8 +56,17 @@
   line-height: 20px;
   color: $dark-grey;
 
-  flex-basis: 50%;
+  //flex-basis: 50%;
   margin: 0;
+  display: block;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .contact__map {
