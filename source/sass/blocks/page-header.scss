@@ -87,8 +87,19 @@
   }
 }
 
+.page-header__logo-image {
+  @media (min-width: $tablet) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: 60px;
+  }
+}
+
 .page-header__toggle {
-  display: none;
   border: none;
   background-color: transparent;
   width: 24px;
@@ -102,5 +113,13 @@
 
   @media (min-width: $tablet) {
     display: none;
+  }
+
+  &--without-js {
+    display: none;
+  }
+
+  &--menu-open {
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 }
