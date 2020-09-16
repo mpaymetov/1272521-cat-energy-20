@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--main-page">
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
@@ -23,7 +23,7 @@
           </button>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--main-page">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">главная</a>
             </li>
@@ -48,6 +48,10 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
 
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" class="promo__picture" alt="Cat Energy PRO">
@@ -98,58 +102,72 @@
 
     <section class="live-example">
       <div class="container">
-        <h2 class="live-example__title">Живой пример</h2>
-        <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="">
-          <ul class="live-example__achievement achievement">
-            <li class="achievement__item">
-              <p class="achievement__description">снижение веса</p>
-              <p class="achievement__value">5 кг</p>
-            </li>
-            <li class="achievement__item">
-              <p class="achievement__description">затрачено времени</p>
-              <p class="achievement__value">60 дней</p>
-            </li>
-          </ul>
-          <div class="">
-            <p class="live-example__cost">Затраты на питание:</p>
-            <p class="live-example__cost">15 000 РУБ.</p>
+        <div class="live-example__block">
+          <div class="live-example__description-block">
+            <h2 class="live-example__title">Живой пример</h2>
+            <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="live-example__wrapper">
+              <ul class="live-example__achievement achievement">
+                <li class="achievement__item">
+                  <div class="achievement__description-wrap">
+                    <p class="achievement__description">снижение веса</p>
+                  </div>
+                  <p class="achievement__value">5 кг</p>
+                </li>
+                <li class="achievement__item">
+                  <div class="achievement__description-wrap">
+                    <p class="achievement__description">затрачено времени</p>
+                  </div>
+                  <p class="achievement__value">60 дней</p>
+                </li>
+              </ul>
+              <div class="live-example__price">
+                <p class="live-example__cost">Затраты на питание:</p>
+                <p class="live-example__cost">15 000 РУБ.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-          <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Кэт энерджи">
-        </picture>
-        <div class="live-example__slider slider container">
-          <p class="slider__text">Было</p>
-          <div class="slider__range"></div>
-          <p class="slider__text">Стало</p>
+
+          <div class="live-example__slider-block">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Кэт энерджи">
+            </picture>
+            <div class="live-example__slider slider container">
+              <a class="slider__button" href="">Было</a>
+              <div class="slider__range"></div>
+              <a class="slider__button" href="">Стало</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact contact--main">
       <h2 class="visually-hidden">контактная информация</h2>
       <div class="container">
         <div class="contact__wrapper">
           <p class="contact__slogan">приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="contact__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <div class="contact__address-wrapper">
+            <p class="contact__address">ул. Большая<br>Конюшенная, д. 19/8</p>
+            <p class="contact__address">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
-      <div class="contact__map">
+      <div id="map" class="contact__map">
         <picture>
-          <!--
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          -->
 
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" alt="Карта">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" class="contact__image" alt="Карта">
         </picture>
       </div>
     </section>
@@ -207,13 +225,15 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

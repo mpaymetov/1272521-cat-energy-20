@@ -57,13 +57,20 @@ const server = (done) => {
 
 exports.server = server;
 
+const refresh = (done) => {
+  sync.reload();
+  done();
+}
+
+exports.refresh = refresh;
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/js/**/*.js", gulp.series(js, sync.reload));
+  gulp.watch("source/js/**/*.js", gulp.series(js, refresh));
   gulp.watch("source/sass/**/*.scss", gulp.series(css));
-  gulp.watch("source/img/icon-*.svg", gulp.series(sprite, sync.reload));
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+  gulp.watch("source/img/icon-*.svg", gulp.series(sprite, refresh));
+  gulp.watch("source/*.html", gulp.series(html, refresh));
 }
 
 exports.default = gulp.series(
@@ -128,4 +135,4 @@ const clean =() => {
 exports.clean = clean;
 
 exports.build = gulp.series(clean, copy, css, js, images, webpimages, sprite, html);
-exports.start = gulp.series(exports.build, server);
+exports.start = gulp.series(exports.build, server, watcher);

@@ -9,6 +9,7 @@
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
+  height: 16px;
 
   &:last-child {
     text-align: right;
@@ -19,6 +20,7 @@
     line-height: 16px;
     border-bottom: 1px solid #cdcdcd;
     padding-top: 5px;
-    padding-bottom: 7px;
+    padding-bottom: 0;
+    height: 32px;
   }
 }

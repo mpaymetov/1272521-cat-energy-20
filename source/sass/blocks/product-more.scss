@@ -7,7 +7,7 @@
 .product-more__item {
   border-bottom: 2px solid #cdcdcd;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   display: flex;
   flex-direction: column;
@@ -19,8 +19,8 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding-top: 25px;
+    padding-bottom: 27px;
     padding-left: 38px;
     padding-right: 37px;
     border-left: 2px solid #cdcdcd;
@@ -50,7 +50,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop) {

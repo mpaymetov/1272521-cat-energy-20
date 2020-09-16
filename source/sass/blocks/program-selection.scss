@@ -1,3 +1,15 @@
+.program-selection {
+  margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    margin-top: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 75px;
+  }
+}
+
 .program-selection__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -5,8 +17,19 @@
   font-size: 36px;
   line-height: 36px;
   color: $black;
-  margin-top: 27px;
+
+  margin-top: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 56px;
+  }
 }
 
 .program-selection__text {
@@ -16,9 +39,22 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-
   color: $black;
 
   margin-top: 0;
   margin-bottom: 39px;
+  //margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    //margin-top: 54px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    //margin-top: 56px;
+    margin-left: 0;
+  }
 }

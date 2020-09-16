@@ -1,6 +1,8 @@
 .achievement {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
 
   list-style: none;
   padding: 0;
@@ -8,15 +10,27 @@
 }
 
 .achievement__item {
-  flex-basis: 50%;
+  width: 124px;
   position: relative;
 
-  &:not(:last-child) {
-    margin-right: 31px;
+  @media (min-width: $tablet) {
+    width: 162px;
 
-    @media (min-width: $tablet) {
+    &:not(:last-child) {
       margin-right: 42px;
     }
+  }
+}
+
+.achievement__description-wrap {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: -16px;
+
+  @media (min-width: $tablet) {
+    bottom: -6px;
   }
 }
 
@@ -33,18 +47,18 @@
   max-width: 87px;
   margin: 0;
   padding: 0 5px;
-  position: absolute;
-
-  bottom: -14px;
-  left: calc(50% - 44px);
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
     max-width: 140px;
-    left: calc(50% - 70px);
-    bottom: -5px;
+    bottom: -6px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #eaeaea;
   }
 }
 
@@ -62,10 +76,14 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 3px;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    height: 70px;
     font-size: 30px;
     line-height: 37px;
   }
