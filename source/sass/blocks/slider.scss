@@ -83,6 +83,16 @@
       top: -14px;
       left: calc(50% - 17px);
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      cursor: pointer;
+    }
+
+    &:hover::before {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active::before {
+      border: 1px solid $main-green;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
 
     &::after {

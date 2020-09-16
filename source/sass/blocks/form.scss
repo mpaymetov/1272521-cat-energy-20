@@ -62,7 +62,6 @@
 
 .form__fieldset-legend-wrap {
   margin-top: 26px;
-  //margin-bottom: 32px;
   position: relative;
 
   &::before {
@@ -101,6 +100,7 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $white;
+  display: table;
 
   @media (min-width: $tablet) {
     margin-left: 0;
@@ -282,6 +282,10 @@
       padding-left: 59px;
     }
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -299,6 +303,10 @@
         height: 40px;
       }
     }
+
+    &:hover::before {
+      border: 1px solid #bababa;
+    }
   }
 
   &--checkbox {
@@ -311,6 +319,10 @@
     @media (min-width: $tablet) {
       padding-left: 58px;
       margin-bottom: 33px;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
 
     &:last-child {
@@ -334,6 +346,10 @@
         top: -6px;
       }
     }
+
+    &:hover::before {
+      border: 1px solid #bababa;
+    }
   }
 }
 
@@ -347,6 +363,18 @@
   box-sizing: border-box;
   border-radius: 0;
   position: relative;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid #FF8282;
+  }
 
   @media (min-width: $tablet) {
     padding: 18px 17px 14px;
@@ -431,13 +459,20 @@
   height: 150px;
   margin-top: 3px;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $dark-grey;
+  }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
     margin-top: 0;
     padding-top: 9px;
     padding-left: 17px;
-    //padding-bottom: 20px;
     min-height: 174px;
   }
 

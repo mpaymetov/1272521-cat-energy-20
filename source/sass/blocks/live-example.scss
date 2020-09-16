@@ -29,8 +29,6 @@
     flex-direction: row;
     border-top: none;
     padding-top: 0;
-    //max-width: 1300px;
-    //margin: 0 auto;
   }
 }
 
@@ -71,7 +69,6 @@
 
   @media (min-width: $desktop) {
     margin-top: 57px;
-    //padding-left: 71px;
   }
 }
 
@@ -81,8 +78,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  /* special_dark-grey */
-
   color: $dark-grey;
 
   padding-right: 1px;
@@ -159,7 +154,6 @@
 
   color: $black;
   margin-top: 0;
-  //margin-bottom: 36px;
   margin-bottom: 0;
 
   @media (min-width: $tablet) {

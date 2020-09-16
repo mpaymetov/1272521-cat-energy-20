@@ -32,7 +32,7 @@
 
     @media (min-width: $desktop) {
       content: "";
-      width: 50vw;
+      width: 50%;
       height: 696px;
       right: 0;
       top: 0;
@@ -64,7 +64,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  //border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
     border-bottom: none;
