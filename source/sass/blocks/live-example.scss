@@ -192,3 +192,16 @@
     padding-top: 0;
   }
 }
+
+.live-example__image-wrapper {
+  @media (min-width: $tablet) {
+    margin-left: 8px;
+    margin-right: -8px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 3px;
+    margin-left: -18px;
+    margin-right: 18px;
+  }
+}
