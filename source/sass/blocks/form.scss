@@ -170,9 +170,10 @@
 
     @media (min-width: $desktop) {
       flex-direction: row;
+      justify-content: space-between;
 
       .form__input {
-        flex-grow: 1;
+        flex-basis: 47%;
 
         &:not(:last-child) {
           margin-right: 78px;
@@ -266,6 +267,12 @@
     font-size: 20px;
     line-height: 30px;
     margin-right: 18px;
+  }
+
+  &--contact {
+    @media (min-width: $desktop) {
+      margin-right: 24px;
+    }
   }
 
   &--radio {
