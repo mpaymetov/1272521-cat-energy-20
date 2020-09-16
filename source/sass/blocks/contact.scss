@@ -1,17 +1,48 @@
 .contact {
   padding-top: 28px;
-  //padding-bottom: 22px;
-  background-color: #f2f2f2;
+  background-color: $grey;
+  position: relative;
+  overflow: hidden;
 
   &--main {
-    background-color: #ffffff;
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
   }
 }
 
 .contact__wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 22px;
+
+  justify-content: space-between;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 59px;
+    padding-left: 41px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    background-color: $white;
+    width: 570px;
+    height: 201px;
+
+    padding-left: 76px;
+    padding-right: 89px;
+    padding-top: 65px;
+    padding-bottom: 57px;
+    top: 95px;
+    z-index: 1;
+  }
 }
 
 .contact__slogan {
@@ -19,13 +50,32 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
 
   color: #111111;
-
-  flex-basis: 50%;
   margin: 0;
+  display: block;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contact__address-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $tablet) {
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: flex-start;
+  }
 }
 
 .contact__address {
@@ -34,12 +84,30 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $dark-grey;
 
-  flex-basis: 50%;
   margin: 0;
+  display: block;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .contact__map {
-  max-height: 400px;
+  height: 362px;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+}
+
+.contact__image {
+  width: 100%;
+  position: absolute;
 }
